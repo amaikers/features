@@ -1,0 +1,267 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - taxonomy
+    - search_api
+  config:
+    - field.storage.commerce_product.variations
+    - field.storage.commerce_product.field_categories
+    - field.storage.commerce_product.field_brand
+    - field.storage.commerce_product.field_special_categories
+    - field.storage.commerce_product.field_artist
+    - field.storage.commerce_product.field_genre
+    - search_api.server.solr_5
+id: products
+name: Products
+description: ''
+read_only: false
+field_settings:
+  created:
+    label: Created
+    datasource_id: 'entity:commerce_product'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - commerce_product
+  field_artist:
+    label: 'Artist for Facet'
+    datasource_id: 'entity:commerce_product'
+    property_path: field_artist
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_artist
+  field_brand_1:
+    label: 'Brand for Facet'
+    datasource_id: 'entity:commerce_product'
+    property_path: field_brand
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_brand
+  field_categories_1:
+    label: 'Categories for Facet'
+    datasource_id: 'entity:commerce_product'
+    property_path: field_categories
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_categories
+  field_genre_audio:
+    label: 'Genre for Facet'
+    datasource_id: 'entity:commerce_product'
+    property_path: field_genre
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_genre
+  field_special_categories_1:
+    label: 'Special Categories for Facet'
+    datasource_id: 'entity:commerce_product'
+    property_path: field_special_categories
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_special_categories
+  name:
+    label: 'Brand » Taxonomy term » Name'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'field_brand:entity:name'
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_brand
+      module:
+        - taxonomy
+        - taxonomy
+  name_1:
+    label: 'Categories » Taxonomy term » Name'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'field_categories:entity:name'
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_categories
+      module:
+        - taxonomy
+        - taxonomy
+  name_2:
+    label: 'Special Categories » Taxonomy term » Name'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'field_special_categories:entity:name'
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_special_categories
+      module:
+        - taxonomy
+        - taxonomy
+  name_3:
+    label: 'Artist » Taxonomy term » Name'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'field_artist:entity:name'
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_artist
+      module:
+        - taxonomy
+        - taxonomy
+  name_4:
+    label: 'Genre » Taxonomy term » Name'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'field_genre:entity:name'
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_genre
+      module:
+        - taxonomy
+        - taxonomy
+  number:
+    label: 'Variations » Product variation » Price » Number'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:price:number'
+    type: decimal
+    dependencies:
+      config:
+        - field.storage.commerce_product.variations
+      module:
+        - commerce_product
+        - commerce_product
+  product_id:
+    label: ID
+    datasource_id: 'entity:commerce_product'
+    property_path: product_id
+    type: integer
+    dependencies:
+      module:
+        - commerce_product
+  sku:
+    label: 'Variations » Product variation » SKU'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:sku'
+    type: text
+    boost: !!float 3
+    dependencies:
+      config:
+        - field.storage.commerce_product.variations
+      module:
+        - commerce_product
+        - commerce_product
+  status:
+    label: Published
+    datasource_id: 'entity:commerce_product'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - commerce_product
+  title:
+    label: Title
+    datasource_id: 'entity:commerce_product'
+    property_path: title
+    type: text
+    boost: !!float 5
+    dependencies:
+      module:
+        - commerce_product
+  type:
+    label: 'Product type'
+    datasource_id: 'entity:commerce_product'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - commerce_product
+datasource_settings:
+  'entity:commerce_product':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  highlight:
+    highlight: always
+    highlight_partial: false
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  ignorecase:
+    all_fields: true
+    fields:
+      - field_artist
+      - field_brand_1
+      - field_categories_1
+      - field_genre_audio
+      - field_special_categories_1
+      - name
+      - name_1
+      - name_2
+      - name_3
+      - name_4
+      - sku
+      - title
+      - type
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  rendered_item: {  }
+  stemmer:
+    all_fields: true
+    fields:
+      - name
+      - name_1
+      - name_2
+      - name_3
+      - name_4
+      - sku
+      - title
+    exceptions:
+      mexican: mexic
+      texan: texa
+    weights:
+      preprocess_index: 0
+      preprocess_query: 0
+  transliteration:
+    all_fields: true
+    fields:
+      - field_artist
+      - field_brand_1
+      - field_categories_1
+      - field_genre_audio
+      - field_special_categories_1
+      - name
+      - name_1
+      - name_2
+      - name_3
+      - name_4
+      - sku
+      - title
+      - type
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: solr_5

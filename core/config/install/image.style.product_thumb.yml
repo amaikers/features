@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: product_thumb
+label: 'Product Thumb'
+effects:
+  94078b65-dbf8-42f7-83e2-eb2ffb2620e7:
+    uuid: 94078b65-dbf8-42f7-83e2-eb2ffb2620e7
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 220
+      height: 220
+      anchor: center-center

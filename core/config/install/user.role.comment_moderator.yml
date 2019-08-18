@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: comment_moderator
+label: 'Comment moderator'
+weight: 4
+is_admin: null

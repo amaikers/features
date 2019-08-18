@@ -1,0 +1,13 @@
+name: 'Image Gallery'
+description: 'Provides Image Gallery content type and related configuration. An Image Gallery displaying multiple images in a rich media element.'
+type: module
+core: 8.x
+dependencies:
+  - content_moderation
+  - field
+  - file
+  - image
+  - menu_ui
+  - node
+  - path
+  - text

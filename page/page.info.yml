@@ -1,0 +1,31 @@
+name: Page
+description: 'Provides Page content type and related configuration. A basic content page.'
+type: module
+core: 8.x
+dependencies:
+  - better_exposed_filters
+  - block
+  - block_content
+  - commerce_product
+  - content_moderation
+  - facets
+  - facets_pretty_paths
+  - facets_summary
+  - field
+  - field_group
+  - file
+  - image
+  - language
+  - menu_ui
+  - metatag
+  - node
+  - options
+  - path
+  - search_api
+  - search_api_solr
+  - system
+  - taxonomy
+  - text
+  - user
+  - views
+  - webform

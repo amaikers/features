@@ -1,0 +1,14 @@
+name: Recipe
+description: 'Provides Recipe content type and related configuration. '
+type: module
+core: 8.x
+dependencies:
+  - commerce_product
+  - content_moderation
+  - field
+  - language
+  - menu_ui
+  - node
+  - path
+  - text
+  - user

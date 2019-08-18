@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.artists
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: bartik_artists
+theme: bartik
+region: header
+weight: -16
+provider: null
+plugin: 'facet_block:artists'
+settings:
+  id: 'facet_block:artists'
+  label: Artists
+  provider: facets
+  label_display: visible
+  block_id: artists
+visibility:
+  request_path:
+    id: request_path
+    pages: "/products*\r\n/products/*"
+    negate: false
+    context_mapping: {  }

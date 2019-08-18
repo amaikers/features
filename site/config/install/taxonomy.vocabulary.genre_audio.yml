@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Genre (Audio)'
+vid: genre_audio
+description: 'Genres for audio.'
+weight: 0

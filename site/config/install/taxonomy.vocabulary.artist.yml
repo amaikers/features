@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Artist
+vid: artist
+description: 'Artist or band name.'
+weight: 0

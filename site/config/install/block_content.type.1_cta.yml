@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: 1_cta
+label: '1 CTA'
+revision: 0
+description: 'One large cta used near the homepage footer.'

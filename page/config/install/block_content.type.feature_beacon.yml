@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: feature_beacon
+label: 'Feature Beacon'
+revision: 1
+description: 'Add a beacon to highlight a feature on the website frontend.'

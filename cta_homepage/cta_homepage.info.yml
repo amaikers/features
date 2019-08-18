@@ -1,0 +1,14 @@
+name: 'CTA - Homepage'
+description: 'Provides CTA - Homepage content type and related configuration. A CTA (Call-To-Action) that will be displayed on the homepage.'
+type: module
+core: 8.x
+dependencies:
+  - content_moderation
+  - field
+  - file
+  - image
+  - link
+  - menu_ui
+  - node
+  - path
+  - text

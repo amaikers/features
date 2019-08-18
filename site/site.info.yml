@@ -1,0 +1,24 @@
+name: Site
+description: 'Provides site components.'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - block_content
+  - ckeditor
+  - commerce_product
+  - content_translation
+  - editor
+  - entity_reference_revisions
+  - field
+  - filter
+  - image
+  - language
+  - link
+  - paragraphs
+  - simple_gmap
+  - system
+  - taxonomy
+  - text
+  - user
+  - views

@@ -1,0 +1,35 @@
+name: Core
+description: 'Provides core components required by other features.'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - block_content
+  - color_field
+  - comment
+  - commerce_order
+  - commerce_price
+  - commerce_product
+  - commerce_shipping
+  - commerce_store
+  - contact
+  - content_translation
+  - entity_reference_revisions
+  - field
+  - field_group
+  - file
+  - image
+  - imce
+  - link
+  - media
+  - menu_block
+  - menu_link_content
+  - metatag
+  - node
+  - options
+  - paragraphs
+  - profile
+  - system
+  - text
+  - user
+  - views

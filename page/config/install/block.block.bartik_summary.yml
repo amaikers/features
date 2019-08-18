@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets_summary.facets_summary.summary
+  module:
+    - facets_summary
+  theme:
+    - bartik
+id: bartik_summary
+theme: bartik
+region: content
+weight: -27
+provider: null
+plugin: 'facets_summary_block:summary'
+settings:
+  id: 'facets_summary_block:summary'
+  label: Summary
+  provider: facets_summary
+  label_display: '0'
+visibility: {  }
