@@ -1,0 +1,4 @@
+excluded:
+  - pathauto.pattern.product_commerce_product_title_
+  - commerce_payment.commerce_payment_gateway.email_money_transfer_
+required: true

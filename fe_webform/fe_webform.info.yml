@@ -1,0 +1,8 @@
+name: fe_webform
+type: module
+core: 8.x
+dependencies:
+  - commerce_payment
+  - commerce_product
+  - pathauto
+  - webform
