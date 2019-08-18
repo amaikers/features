@@ -1,0 +1,21 @@
+name: 'Node Types'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - comment
+  - comments_order
+  - content_moderation
+  - datetime
+  - field
+  - image
+  - language
+  - menu_ui
+  - metatag
+  - node
+  - path
+  - system
+  - text
+  - user
+  - views
+  - workflows

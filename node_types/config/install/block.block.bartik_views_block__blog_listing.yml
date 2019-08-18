@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: bartik_views_block__blog_listing
+theme: bartik
+region: content
+weight: -21
+provider: null
+plugin: 'views_block:blog-listing'
+settings:
+  id: 'views_block:blog-listing'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /blog
+    negate: false
+    context_mapping: {  }
