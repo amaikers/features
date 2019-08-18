@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_beacon:f4a1f2be-5b49-4501-887c-fde77f921fe3'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: bartik_featurecarttotal
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:f4a1f2be-5b49-4501-887c-fde77f921fe3'
+settings:
+  id: 'block_content:f4a1f2be-5b49-4501-887c-fde77f921fe3'
+  label: 'Cart Total'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

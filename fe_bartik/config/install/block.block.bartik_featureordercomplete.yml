@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_beacon:1f030b9a-e12e-4c0f-96d6-209e615ffbf4'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: bartik_featureordercomplete
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:1f030b9a-e12e-4c0f-96d6-209e615ffbf4'
+settings:
+  id: 'block_content:1f030b9a-e12e-4c0f-96d6-209e615ffbf4'
+  label: 'Order Complete'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

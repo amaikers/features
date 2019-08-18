@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_beacon:497dfac6-02ed-40cf-b993-382e398ffeea'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: bartik_featurerelatedproducts
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:497dfac6-02ed-40cf-b993-382e398ffeea'
+settings:
+  id: 'block_content:497dfac6-02ed-40cf-b993-382e398ffeea'
+  label: 'Related Products'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

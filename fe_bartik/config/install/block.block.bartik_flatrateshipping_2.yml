@@ -1,0 +1,30 @@
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic_promotion:b33f48fe-b62c-46e4-9b19-775ee633aa26'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: bartik_flatrateshipping_2
+theme: bartik
+region: header
+weight: -16
+provider: null
+plugin: 'block_content:b33f48fe-b62c-46e4-9b19-775ee633aa26'
+settings:
+  id: 'block_content:b33f48fe-b62c-46e4-9b19-775ee633aa26'
+  label: 'Flat Rate Shipping'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
